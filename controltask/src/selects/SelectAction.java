@@ -6,29 +6,35 @@ import java.util.Scanner;
 
 public class SelectAction {
 
-    public  static  void  selectAction (int numberTask){
+        Replace replaceLetterOnSymbol = new Replace();
+        Reverse reverseStrings = new Reverse();
+        Fibonacci fibonacci = new Fibonacci();
+        EvenNumber evenNumber = new EvenNumber();
+        Armstrong armstrong = new Armstrong();
+
+    public void  selectAction(int numberTask){
         Scanner scanner = new Scanner(System.in);
         int selectNumber;
         if(numberTask == 1){
-            EvenNumber.determinesNumberEvenOrNotEven();
+            evenNumber.determinesNumberEvenOrNotEven();
         }
         else if(numberTask == 4){
-            Fibonacci.firstFiftyNumber();
+            fibonacci.firstFiftyNumber();
         }
         else if(numberTask == 3){
-            Reverse.reverseString();
+            reverseStrings.reverseString();
         }
         else if(numberTask == 5){
-            Replace.replaceLetterOnSymbol();
+
+            replaceLetterOnSymbol.replaceLetterOnSymbol();
         }
         else if(numberTask == 2){
-            Armstrong.armstrongNumber();
+            armstrong.armstrongNumber();
         }
         else {
             System.out.println("Error number, can you repeat");
             selectNumber = scanner.nextInt();
-            SelectAction.selectAction(selectNumber);
+            selectAction(selectNumber);
         }
-
     }
 }

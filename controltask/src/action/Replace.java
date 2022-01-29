@@ -8,7 +8,7 @@ public class Replace {
 Буквы о на ноль. Выводит новую строку на экран.
 Добавить обработку длины строки,максимальная длина 30 символов.
 Строка может состоять из нескольких слов и любых символов*/
-    public static void replaceLetterOnSymbol(){
+    public  void replaceLetterOnSymbol(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter text for replace  o = 0 and a = @, please");
         String text = scanner.next();

@@ -7,7 +7,7 @@ public class EvenNumber {
  Проверять только целые числа.
  Добавить обработку ошибок с описанием
 * */
-    public static  void determinesNumberEvenOrNotEven(){
+    public   void determinesNumberEvenOrNotEven(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number, please");
         int number = scanner.nextInt();

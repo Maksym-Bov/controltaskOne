@@ -9,7 +9,7 @@ public class Armstrong {
 которых оно состоит, возведенных в степень, равную количеству цифр в этом числе. Как пример - число 371:
 371 = 3*3*3 + 7*7*7 + 1*1*1 = 27 + 343 + 1 = 371
     * */
-    public static void armstrongNumber(){
+    public void armstrongNumber(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number for verification Armstrong number");
         int number = scanner.nextInt();

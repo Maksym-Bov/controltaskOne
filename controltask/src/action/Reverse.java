@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Reverse {
 /*(Напишите программу для переворачивания строки,изменив расположение символов в строке
 задом наперёд без использования встроенных в String функций.*/
-    public static void reverseString (){
+    public  void reverseString (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter text for reverse, please");
         String text = scanner.next();

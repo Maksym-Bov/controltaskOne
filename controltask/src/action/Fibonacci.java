@@ -3,7 +3,7 @@ package action;
 public class Fibonacci {
 /*Рассчитать первых 20 чисел Фиббоначии вывести их на экран
 * */
-    public  static  void firstFiftyNumber (){
+    public  void firstFiftyNumber (){
         int a = 0,b = 1,c;
         for(int i = 3; i < 23; i++){
             c = a + b;

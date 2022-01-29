@@ -3,8 +3,9 @@ import selects.SelectAction;
 import java.util.Scanner;
 
 public class Login {
+  SelectAction  selectAction = new SelectAction();
 
-public static  void  login(String nameDB, String passwordDB ){
+public   void  login(String nameDB, String passwordDB ){
         Scanner scanner = new Scanner(System.in);
         int lengthPassword = 30;
         int lengthPasswordLogin;
@@ -33,7 +34,7 @@ public static  void  login(String nameDB, String passwordDB ){
                     System.out.println("4.Fibonacci");
                     System.out.println("5.Replace");
                     selectNumber = scanner.nextInt();
-                    SelectAction.selectAction(selectNumber);
+                    selectAction.selectAction(selectNumber);
 
                 }
                 else {
